@@ -1,12 +1,10 @@
 
-/* Указываем box sizing */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* Убираем внутренние отступы */
 ul[class],
 ol[class] {
     padding: 0;
