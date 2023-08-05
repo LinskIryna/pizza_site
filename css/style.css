@@ -1,0 +1,256 @@
+body {
+    background-color: ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    
+    
+}
+
+.center {
+    text-align: center;
+}
+
+/* nav */
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.nav_link>a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color .1s linear;
+    position: relative;
+}
+
+.nav_link {
+    margin-left: 40px;
+    margin-top: 0;
+    position: relative;
+}
+
+
+
+.nav_link :hover {
+    color: #c59d5f; 
+
+}
+
+.nav_link::after {
+    color: #c59d5f;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear; 
+
+}
+
+.nav_link :hover :after, 
+.nav_link .active :after {
+    opacity: 1;
+}
+
+.nav_link .active {
+    color: #c59d5f;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-bottom: 40px;
+}
+
+/* banner */
+
+#main_banner {
+    background-image: url(../imgs/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner {
+    color: #ffffff;
+    padding-top: 166px;
+    padding-bottom: 403px;
+}
+.pizza {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.title {
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.description {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    max-width: 450px;
+    margin-bottom: 60px;
+}
+.btn {
+    display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: none;  
+	border-radius: 0px;
+	height: 32px;
+	line-height: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: #c59d5f;
+	box-shadow: 0 2px #856306;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+    position: absolute;
+    left: 160px;
+
+}
+.btn:hover {
+	background-color: #856306;
+}
+
+
+/* Choose pizza */
+
+.h2 {
+    font-size: 35px;
+    color: #c59d5f;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.box {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.box-item {
+    width: 30%;
+}
+.box-img {
+    position: relative;
+}
+.photo-item {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+.price {
+    background-color: rgb(197, 157, 95);
+    position: absolute;
+    right: 0;
+        bottom: 10px;
+        width: 82px;
+        height: 25px;
+        z-index: 1;
+        text-align: center;
+      }
+      
+.item-price {
+        font-size: 16px;
+        font-family: "Roboto Condensed";
+        color: #000;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.625;
+        text-align: center;
+      }
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto Condensed";
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+.item-description {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Roboto Condensed";
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;line-height: 1.6;
+}
+.btn-down {
+    display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: none;  
+	border-radius: 0px;
+	height: 32px;
+	line-height: 32px;
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: #c59d5f;
+	box-shadow: 0 2px #856306;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+    width: 185px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}   
+.btn-down:hover {
+	background-color: #856306;
+}
+
+
+.page_salads {
+    background-image: url(../imgs/bg_salads_box.png);
+    width: 100%;
+    height: 770px;
+    background-position: center;
+    
+} 
+
+/* Delivery and Payment*/
+
+.delivery-header {
+    background-image: url("../imgs/bg_delivery.png");
+    width: 100%;
+    height: 280 px;
+    background-position: center;
+    padding: 5px 5px;
+  }
+  .white {
+      color: #ffffff;
+      text-align: center;
+  }
+  
+
